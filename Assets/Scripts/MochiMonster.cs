@@ -12,7 +12,7 @@ public enum MochiMonsterState
 public class MochiMonster : MonoBehaviour
 {
     [SerializeField]
-    private Transform body;
+    private Transform modelTf;
 
     private Sequence idleSequence;
     private Sequence movingSequence;
@@ -32,7 +32,7 @@ public class MochiMonster : MonoBehaviour
 
             if (m_State == MochiMonsterState.Idle)
             {
-                idleSequence.Play();
+
             }
             else if (m_State == MochiMonsterState.Moving)
             {
@@ -48,8 +48,6 @@ public class MochiMonster : MonoBehaviour
 
     void Start()
     {
-        CreateIdleSequence();
-
         m_State = MochiMonsterState.Idle;
     }
 
@@ -61,10 +59,8 @@ public class MochiMonster : MonoBehaviour
     private void CreateIdleSequence()
     {
         idleSequence = DOTween.Sequence();
-        idleSequence.Append(body.DOScaleY(0.8f, 0.7f))
-                    .Append(body.DOScaleY(1f, 0.5f));
-
-        idleSequence.SetLoops(-1);
+        idleSequence.Append(modelTf.DOScaleY(0.2f, 1f))
+                    .Append(modelTf.DOScaleY(1f, 0.5f));
     }
 
     private void CreateAttackSequence()
