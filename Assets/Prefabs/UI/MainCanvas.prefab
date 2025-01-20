@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 9110090873385953243}
   - component: {fileID: 5070920453600609592}
   - component: {fileID: 3676121463210295610}
+  - component: {fileID: 9118165747139150444}
   m_Layer: 5
   m_Name: MainCanvas
   m_TagString: Untagged
@@ -225,6 +226,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &9118165747139150444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2669177947996535102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5ede7fc24d84bcc982985656d55063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3625409493084609815
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +576,10 @@ PrefabInstance:
     - target: {fileID: 4549524959275025242, guid: 04a0c9992bfad4f7e874b7ad11981890, type: 3}
       propertyPath: m_Name
       value: LoadingScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4549524959275025242, guid: 04a0c9992bfad4f7e874b7ad11981890, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
