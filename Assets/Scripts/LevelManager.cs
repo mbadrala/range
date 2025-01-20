@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    void Start()
+    private void Awake()
     {
-        
+        DontDestroyOnLoad(this);
     }
 
-    void Update()
+    public void Initialize()
     {
-        
     }
 }
