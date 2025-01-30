@@ -29,6 +29,9 @@ public class Button : MonoBehaviour
 
     public void OnClick()
     {
-
+        body.DOScale(0f, 0.2f).OnComplete(() =>
+        {
+            Destroy(gameObject);
+        });
     }
 }
