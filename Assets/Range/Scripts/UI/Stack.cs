@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Mochi.UI
+namespace Range.UI
 {
     public class Stack : MonoBehaviour
     {

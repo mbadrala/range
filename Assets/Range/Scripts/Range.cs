@@ -1,11 +1,11 @@
 using System;
 
-namespace Mochi
+namespace Range
 {
-    public static class MochiConfig
+    public static class RangeConfig
     {
         /// <summary>
-        /// Mochi version
+        /// Range version
         /// </summary>
         public static Version version = new Version("0.0.1");
     }

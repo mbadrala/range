@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Mochi.UI
+namespace Range.UI
 {
     public class Screen : MonoBehaviour
     {
