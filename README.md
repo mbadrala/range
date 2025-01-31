@@ -1,3 +1,4 @@
-# MOCHI
+# Range
 
-Unity components
+Unity mobile game boilerplate
+
