@@ -31,6 +31,9 @@
 .vs/
 .vscode/
 
+# Zed directory
+.zed/
+
 # Gradle cache directory
 .gradle/
 
