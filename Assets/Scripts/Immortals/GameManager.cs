@@ -1,5 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+// using System.Collections;
+// using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        DOTween.Init(); 
+        DOTween.Init();
     }
 
     public void Reset()
