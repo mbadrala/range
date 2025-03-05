@@ -1,11 +1,9 @@
 using UnityEngine;
-using UnityEngine.UI;
 using DG.Tweening;
 
 public class Button : MonoBehaviour
 {
-    [SerializeField]
-    private RectTransform body;
+    [SerializeField] private RectTransform body;
 
     public void OnEnter()
     {
@@ -29,9 +27,5 @@ public class Button : MonoBehaviour
 
     public void OnClick()
     {
-        body.DOScale(0f, 0.2f).OnComplete(() =>
-        {
-            Destroy(gameObject);
-        });
     }
 }

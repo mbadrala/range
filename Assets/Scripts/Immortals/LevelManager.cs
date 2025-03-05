@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    private GameManager gm;
+
     private void Awake()
     {
         DontDestroyOnLoad(this);
     }
 
-    public void Initialize()
+    public void Initialize(GameManager gm)
     {
+        this.gm = gm;
     }
 }
