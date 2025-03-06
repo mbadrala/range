@@ -4,6 +4,8 @@ using TMPro;
 
 public class MainCanvas : MonoBehaviour
 {
+    [Header("Screens")]
+    [SerializeField] private GameObject loadingScreen;
     [Header("Main Buttons")]
     [SerializeField] private Button playButton;
     [Header("HUD")]
@@ -27,11 +29,21 @@ public class MainCanvas : MonoBehaviour
 
     }
 
-    public void Initialize(GameManager gm)
+    public void Initialize()
     {
-        this.gm = gm;
+        gm = FindFirstObjectByType<GameManager>();
         playButton.gameObject.SetActive(true);
         SetLevelProgressBar(0f);
+    }
+
+    public void ShowLoadingScreen()
+    {
+        loadingScreen.SetActive(true);
+    }
+
+    public void HideLoadingScreen()
+    {
+        loadingScreen.SetActive(false);
     }
 
     public void OnPlayButtonClicked()

@@ -316,6 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe5ede7fc24d84bcc982985656d55063, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingScreen: {fileID: 4753268525789159928}
   playButton: {fileID: 8865680649732812497}
   currentLevelLabel: {fileID: 5132465012969987910}
   levelProgressBar: {fileID: 3978706315470843707}
@@ -1265,6 +1266,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04a0c9992bfad4f7e874b7ad11981890, type: 3}
+--- !u!1 &4753268525789159928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4549524959275025242, guid: 04a0c9992bfad4f7e874b7ad11981890, type: 3}
+  m_PrefabInstance: {fileID: 9138973879847985826}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &8348078916686163545 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 940827746180271355, guid: 04a0c9992bfad4f7e874b7ad11981890, type: 3}

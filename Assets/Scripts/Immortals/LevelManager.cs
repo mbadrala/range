@@ -11,8 +11,8 @@ public class LevelManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    public void Initialize(GameManager gm)
+    public void Initialize()
     {
-        this.gm = gm;
+        gm = FindFirstObjectByType<GameManager>();
     }
 }
