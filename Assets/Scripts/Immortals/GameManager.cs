@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
             for (int i = 0; i < initializers.Count; i++)
             {
                 initializers[0]?.Invoke();
-                yield return new WaitForSecondsRealtime(1f);
+                yield return null;
             }
 
             MainCanvas.HideLoadingScreen();
